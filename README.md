@@ -3,9 +3,9 @@
 MyMultisensors is a compact multi sensors capable node for your/my home automation.
 Optmized for very low power, ambiant sensors node, battery powered and wireless, i can easily add in each room. 
 
-<img src="https://raw.githubusercontent.com/scalz/MyMultisensors/development/IMG/MyMultisensors_top.jpg" alt="MyMultisensors top"> 
+<img src="https://raw.githubusercontent.com/scalz/MyMultisensors/master/Img/MyMultisensors_top.jpg" alt="MyMultisensors top"> 
 
-<img src="https://raw.githubusercontent.com/scalz/MyMultisensors/development/IMG/MyMultisensors_bottom.jpg" alt="MyMultisensors bottom"> 
+<img src="https://raw.githubusercontent.com/scalz/MyMultisensors/master/Img/MyMultisensors_bottom.jpg" alt="MyMultisensors bottom"> 
 
 I have to say, this is one of my favorite board! well, you think i'm biased :) a bit true ;)
 But the truth is i've never seen the same board before (with my requirements) or i wouldn't have made it!
@@ -25,14 +25,14 @@ As everything is customizable, the choice of the battery or the custom pcb size 
 
 I think i've "almost" achieved my goals :)
 
-<img src="https://raw.githubusercontent.com/scalz/MyMultisensors/development/IMG/schematic.png" alt="schematic"> 
+<img src="https://raw.githubusercontent.com/scalz/MyMultisensors/master/Img/schematic.png" alt="schematic"> 
 
 We can see that it's possible to use different kind of battery, and different antennas (wire or planar pcb).
 
 ###General specs
 ------
 
-<img src="https://raw.githubusercontent.com/scalz/MyMultisensors/development/IMG/MyMultisensors_batteries.jpg" alt="MyMultisensors batteries"> 
+<img src="https://raw.githubusercontent.com/scalz/MyMultisensors/master/Img/MyMultisensors_batteries.jpg" alt="MyMultisensors batteries"> 
 
 |Specs|  |
 |---|---|---|

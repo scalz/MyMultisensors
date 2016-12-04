@@ -1,0 +1,23 @@
+Dec. 4 2016 (Scalz):
+    MyMultisensors Revision 1
+	
+    Features:
+		- Size 	49*25.4 (mm) 
+		- MCU 	Atmel328p TQFP 150nA deep sleep
+		- Radio 	RFM69CW 100nA in deep sleep, NRF24 is coming
+		- Authentication security 	ATSHA204A chip footprint 150nA in deep sleep
+		- OverTheAir Wireless programming 	SPI flash eeprom footprint 200nA in deep sleep
+		- Temperature/Humidity 	SI7021 60nA in deep sleep
+		- Ambiant Light Lux 	OPT3001 300nA in deep sleep, with footprint for optional pullup resistor
+		- Motion detection 	LHI968 good quality/price, with its circuit, active 1.6uA
+		- Door contact 	footprint for soldering an optional pullup resistor >1M
+		- Indicator Led 	Yes, on D9
+		- Extension connector 	FTDI + D3 for connecting Door contact
+		- Pogo pins 	AVRSPI programming
+		- Battery connectors 	CR2032 240mAh, CR2450 500mAh, 2xAAA 1200mAh
+		- Power Supply 	Reverse-polarity protection. 3V3 max
+
+   
+    Known issues: 
+
+

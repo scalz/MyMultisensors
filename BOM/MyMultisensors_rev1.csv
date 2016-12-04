@@ -1,0 +1,48 @@
+Parts;Qty;"Don't Put
+Opt";Value;Package;Description;MPN
+C1, C3, C12, C17, C18, C20, C22, C23, C25, C26;10;;100n;0603;Capacitor;
+C30, C32, C33;12;X;;0603;Capacitor;
+C4, C14, C19, C21;4;;1000p;0603;Capacitor;
+C5;1;;3.3u;0603;Capacitor;
+C6;1;;22n;0603;Capacitor;
+C7, C11;2;;1u;0603;Capacitor;
+C8;1;;100p;0603;Capacitor;
+C13, C16;2;;10n;0603;Capacitor;
+C27, C29;2;;4.7u;0603;Capacitor;
+C2;1;;1u;0805;Capacitor;
+C24;1;;100n;0805;Capacitor;
+C9, C31;2;;100u;0805;Capacitor;
+C10, C28;2;;10u;0805;Capacitor;
+C15;1;;33u;0805;Capacitor;
+D1, D2;2;;1N4148;SOD-123;Diode;
+D3;1;;Red LED;0805;LED;
+Q1;1;;CJ2305;SOT23-3;P-Channel MOSFET;
+R1, R14;2;;0;0603;Resistor;
+R2;1;;1.3M;0603;Resistor;
+R3, R5, R8, R11, R12;5;;15M;0603;Resistor;
+R4;1;;68.1k;0603;Resistor;
+R6;1;;6.81k;0603;Resistor;
+R7;1;;1.5M;0603;Resistor;
+R9, R18, R19;3;;56k;0603;Resistor;
+R10;1;;619k;0603;Resistor;
+R13, R21;2;X;1M;0603;Resistor;
+R15, R16;2;;4k7;0603;Resistor;
+R22;1;;1k5;0603;Resistor;
+R17;1;;10k;0805;Resistor;
+U1, U3;2;;TLV3691IDCKR;SC70-5;Comparator;595-TLV3691IDCKR
+U2;1;;TSU102IST;MINI_SO8;Dual Opamp;511-TSU102IST
+U4;1;;ATMEGA328P-AU;TQFP32;Atmel 8bit 328P TQFP32;
+U5;1;;SI7021-A20-GM1;DFN6;Temp/Hum sensor;634-SI7021-A20-GM1
+U6;1;;OPT3001DNPR;OPT3001DNP;Lux sensor;595-OPT3001DNPR
+U7;1;;AT25DF512C-MAHN-T;AT25DF512C_MAHNT;SPI Flash;988-AT25DF512CMAHN-T
+U8;1;;ATSHA204A-STUCZ-T;SOT23-3;Signing IC;566-ATSHA204ASTUCZ-T 
+U9;1;;RFM69CW;RFM69CW;Hoperf radio;
+RESET;1;;1101NE;;Tactile Switch 1101NE;
+PIR;1;;LHI968;TO5;PIR sensor;
+X1;1;;8 MHz;RESONATOR-SMD;Resonator;
+COIN_HOLDER;1;;;Coincell Holder;CR2032/2450 footprints;
+JP2;1;;;1X06;Pinheader;
+;;;;;;
+"Notes about optional parts: 
+- Some capa are optional. Footprints is there. For stability or more buffer.
+- Resistors are for optional Reedswitch and optional Lux sensor Thresholds. Solder them if needed only or power consumption can increase";;;;;;

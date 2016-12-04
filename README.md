@@ -27,7 +27,7 @@ I think i've "almost" achieved my goals :)
 
 <img src="https://raw.githubusercontent.com/scalz/MyMultisensors/master/Img/MyMultisensors_batteries.jpg" alt="MyMultisensors batteries"> 
 
-We can see that it's possible to use different kind of battery, and different antennas (wire or planar pcb).
+We can see this is possible to use different kind of battery, and different antennas (wire or planar pcb).
 
 ###General specs
 ------

@@ -25,14 +25,14 @@ As everything is customizable, the choice of the battery or the custom pcb size 
 
 I think i've "almost" achieved my goals :)
 
-<img src="https://raw.githubusercontent.com/scalz/MyMultisensors/master/Img/schematic.png" alt="schematic"> 
+<img src="https://raw.githubusercontent.com/scalz/MyMultisensors/master/Img/MyMultisensors_batteries.jpg" alt="MyMultisensors batteries"> 
 
 We can see that it's possible to use different kind of battery, and different antennas (wire or planar pcb).
 
 ###General specs
 ------
 
-<img src="https://raw.githubusercontent.com/scalz/MyMultisensors/master/Img/MyMultisensors_batteries.jpg" alt="MyMultisensors batteries"> 
+<img src="https://raw.githubusercontent.com/scalz/MyMultisensors/master/Img/schematic.png" alt="schematic"> 
 
 |Specs|  |
 |---|---|---|

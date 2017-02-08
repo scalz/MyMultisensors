@@ -5743,8 +5743,8 @@ for OTA or datastorage</text>
 <instance part="GND38" gate="1" x="-124.46" y="165.1" rot="MR0"/>
 <instance part="C30" gate="G$1" x="-119.38" y="137.16" rot="R180"/>
 <instance part="GND39" gate="1" x="-119.38" y="121.92"/>
-<instance part="Q1" gate="A" x="-165.1" y="193.04" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-167.0812" y="197.0024" size="2.0828" layer="95" ratio="10" rot="SMR0"/>
+<instance part="Q1" gate="A" x="-165.1" y="193.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="-163.1188" y="197.0024" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 </instance>
 <instance part="BAT+" gate="G$1" x="-187.96" y="193.04" smashed="yes" rot="R180">
 <attribute name="NAME" x="-185.42" y="189.738" size="1.778" layer="95" rot="R180"/>
@@ -5853,10 +5853,10 @@ for OTA or datastorage</text>
 <junction x="-139.7" y="142.24"/>
 </segment>
 <segment>
-<pinref part="Q1" gate="A" pin="D"/>
 <pinref part="VCC5" gate="G$1" pin="VCC"/>
-<wire x1="-160.02" y1="193.04" x2="-160.02" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="-160.02" y1="195.58" x2="-160.02" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="A" pin="S"/>
+<wire x1="-160.02" y1="195.58" x2="-160.02" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C33" gate="G$1" pin="2"/>
@@ -6264,8 +6264,6 @@ for OTA or datastorage</text>
 <pinref part="COIN_HOLDER" gate="G$1" pin="-"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 <wire x1="-165.1" y1="167.64" x2="-165.1" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="A" pin="G"/>
-<wire x1="-165.1" y1="185.42" x2="-165.1" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="-177.8" y1="170.18" x2="-175.26" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="BAT-" gate="G$1" pin="1"/>
 <wire x1="-175.26" y1="170.18" x2="-172.72" y2="170.18" width="0.1524" layer="91"/>
@@ -6275,6 +6273,8 @@ for OTA or datastorage</text>
 <junction x="-165.1" y="170.18"/>
 <wire x1="-175.26" y1="177.8" x2="-175.26" y2="170.18" width="0.1524" layer="91"/>
 <junction x="-175.26" y="170.18"/>
+<pinref part="Q1" gate="A" pin="G"/>
+<wire x1="-165.1" y1="182.88" x2="-165.1" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -6822,13 +6822,12 @@ for OTA or datastorage</text>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="Q1" gate="A" pin="S"/>
 <pinref part="BAT+" gate="G$1" pin="1"/>
 <wire x1="-185.42" y1="193.04" x2="-175.26" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="-175.26" y1="193.04" x2="-170.18" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="-175.26" y1="193.04" x2="-175.26" y2="185.42" width="0.1524" layer="91"/>
-<junction x="-175.26" y="193.04"/>
 <pinref part="COIN_HOLDER" gate="G$1" pin="+@1"/>
+<pinref part="Q1" gate="A" pin="D"/>
+<wire x1="-170.18" y1="193.04" x2="-175.26" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">

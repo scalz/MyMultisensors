@@ -1,3 +1,9 @@
+Febr. 9 2017 (Scalz)
+  MyMultisensors Revision 1.1
+	- Fixed reverse polarity protection 
+	  Drain and source was inverted on Q1 for revision 1.0 powering through mosfet diode (0.6V) when polarity was crossed
+		Thanks to @Koresh for feedback
+		
 Dec. 4 2016 (Scalz):
     MyMultisensors Revision 1
 	

@@ -29,13 +29,13 @@ I think i've "almost" achieved my goals :)
 
 We can see this is possible to use different kind of battery, and different antennas (wire or planar pcb).
 
-###General specs
+### General specs
 ------
 
 <img src="https://raw.githubusercontent.com/scalz/MyMultisensors/master/Img/schematic.png" alt="schematic"> 
 
 |Specs|  |
-|---|---|---|
+|---|---|
 |Size |49*25.4 (mm) |
 | MCU | Atmel328p TQFP 150nA deep sleep|
 | Radio | RFM69CW 100nA in deep sleep, NRF24 is coming |
@@ -51,24 +51,24 @@ We can see this is possible to use different kind of battery, and different ante
 | Battery connectors | CR2032 240mAh, CR2450 500mAh, 2xAAA 1200mAh |
 | Power Supply | Reverse-polarity protection. 3V3 max |
 
-####Onboard safety
+#### Onboard safety
 
 Onboard, there is a reverse polarity protection. But for power savings, better efficiency etc .. there is no voltage regulator. So it's possible to use others batteries, or ftdi of course, but the max input voltage is 3.3V max.
 
-####Extension Connectors
+#### Extension Connectors
 
 For simplicity, and trying to boost my assembling process (i use reflow), i'm using pogopins. I've done a simple adapter like this..
 - AVRSPI : for burning the bootloader. Here i'm using the Sensebender Micro Atmel 328p Internal 8Mhz BOD 1.8V, in Boards Manager/Mysensors boards
 - FTDI : for uploading the sketch. Without an optimized sketch, no big power savings. it's hw/sw.. still work in progress, i'll never be happy :)
 
-####Power consumption, what can we expect ?
+#### Power consumption, what can we expect ?
 
 Power consumption has been checked with uCurrent Gold + old voltcraft vc506..
 
 Measurement done with PIR enabled, sensors sleeping but without spiflash ic nor Door contact
 
 | Mode | Varta coincell CR2032 | Duracell 2xAAA |
-|---|---|---|---|
+|---|---|---|
 |MCU in deep sleep, interrupt on change |4uA | 3uA|
 |MCU in deep sleep, interrupt on change Wdt Enabled | 8uA | 11uA|
 |MCU running 1Mhz | 732uA | 737uA|
@@ -86,7 +86,7 @@ On other hand, it does not take in account the signing time if feature is used.
 So 30mA for 40ms, say 10 motions detection/hour, give us a theoretical estimation of 2.33years.
 Not so bad..but the node can last a lot more if the software is well optimized and flexible to let user to set dynamically during days, the sensibility and motion detection settings etc..
 
-####Arduino Pin description
+#### Arduino Pin description
 
 |Arduino sketch define| Arduino Pin | description |
 |---|---|---|
@@ -102,7 +102,7 @@ Not so bad..but the node can last a lot more if the software is well optimized a
 ------
 
 |General Node settings | Default Settings | Notes|
-|---|---|---|---|
+|---|---|---|
 | MY_NODE_NAME | MYS_MOTION| Node/sketch name|
 |MY_DEBUG|1.0| General Level Mysensors Debug messages. Comment it to save memory!|
 |MY_DEBUG_SKETCH|1.0|Sketch Level Debug messages. Comment it to save memory!|
@@ -127,7 +127,7 @@ Not so bad..but the node can last a lot more if the software is well optimized a
 |BATTERY_DURAC_IND_2AAA| |Uncomment if using 2xAAA, for batt voltage reading|
 
 |MyPirHelper.h | Default Settings | Notes |
-|---|---|---|---|
+|---|---|---|
 | PIR_SETTLE_TIME | 20000| in milliseconds/ better 30000. Waiting for PIR settling at node init|
 | PIR_DEFAULT_PULSES | 8| Programmable pulse counter : 1... 255 pulses but for 255 pulses you'll need to dance for a nice motion :)|
 | PIR_DEFAULT_WINDOWTIME | 1| Window time : 0 to 3.  Range: 8s... 16s.  Time in sec = 8 * (value+1)|
@@ -137,16 +137,16 @@ Not so bad..but the node can last a lot more if the software is well optimized a
 All these infos can be found in the source files.
 
 
-####External Libraries needed
+#### External Libraries needed
 - Opt3001      : https://github.com/node-it/EnvironOne/blob/master/src/Opt3001.h
 - SI7021       : from Marcus Sorensen <marcus@electron14.com> 
 
-####From the controller view
+#### From the controller view
 
 These are the CHILD_IDs used for sensors, or for dynamic settings.
 
 |CHILD NODE ID/CMD | Default ID | Notes|
-|---|---|---|---|
+|---|---|---|
 | CHILD_ID_PIR | 1|PIR sensor |
 | CHILD_ID_PIR_EN | 2|Enable PIR |
 | CHILD_ID_TEMP  | 3|Temperature sensor|
@@ -167,14 +167,14 @@ These are the CHILD_IDs used for sensors, or for dynamic settings.
 | CMID_TH_DELTA | 21|Command from controller to set difference of temp/hum needed for update controller |
 | CMID_EN_LED  | 22|Command from controller to set led|
 
-###Known issues
+### Known issues
 ------ 
 
-###TODO
+### TODO
 ------
 - improve sketch
 
-###Donations
+### Donations
 ------
 
 I'm trying to make opensource projects. I do this for free and sharing spirit. I don't do ads etc..
@@ -193,7 +193,7 @@ Always special thanks to:
 - Mysensors Team for its great work
 - Adafruit, Sparkfun, TI, Atmel etc.. for all educational infos they share
 
-###Links, reference and license** 
+### Links, reference and license 
 ------
 - https://www.openhardware.io/view/75/MyMultisensors
 - http://www2.st.com/content/ccc/resource/technical/document/application_note/b8/84/29/41/21/00/44/41/DM00096551.pdf/files/DM00096551.pdf/jcr:content/translations/en.DM00096551.pdf
